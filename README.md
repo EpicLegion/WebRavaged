@@ -1,0 +1,1 @@
+This project aims to create fully featured webrcon for the new FPS game developed by 2Dawn - Ravaged.

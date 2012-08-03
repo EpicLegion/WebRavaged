@@ -1,0 +1,404 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 11px;
+    background: #fff;
+}
+
+#ajaxLoader {
+    display: none;
+    padding: 10px;
+    background: #4B505B;
+    position: fixed;
+    color: #fff;
+    top: 0;
+}
+
+a {
+    color: #5B738F;
+    text-decoration: none;
+}
+
+#logo {
+    width: 100%;
+    background: #5e7096;
+}
+
+#logo h1 {
+    padding: 15px;
+    margin: 0px;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+ul#menu {
+    height: 32px;
+    background: #5e7096;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0px;
+}
+
+ul#menu li {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    margin-left: 15px;
+    list-style: none;
+}
+
+ul#menu li a {
+    height: 18px;
+    padding: 7px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+
+ul#menu li:hover a, ul#menu li.active a {
+    background: #8196c4;
+}
+
+#loginbox {
+    width: 500px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+    background: #F5F5F5;
+    padding: 15px;
+}
+
+h2 {
+    border: 1px solid #CFCFCF;
+    border-left: 5px solid #CFCFCF;
+    padding: 7px;
+    font-size: 12px;
+    background: #EFEFEF;
+    color: #222;
+}
+
+.badge {
+    border: 1px solid #CFCFCF;
+    padding: 5px;
+    background: #DDDDDD;
+    font-weight: bold; 
+    color: #222;
+}
+
+#footer {
+    width: 90%;
+    text-align: right;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message {
+    width: 95%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    background: #EFEFEF;
+    padding: 10px;
+}
+
+#loginbox div {
+    margin: 10px;
+}
+
+#loginbox div label {
+    float: left;
+    width: 100px;
+}
+
+#loginbox div #username {
+    background-image: url(images/user.png);
+    padding: 6px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    font-size: 1.0em;
+    font-family: inherit;
+    border: 1px solid #999;
+}
+
+#loginbox div #password {
+    background-image: url(images/key.png);
+    padding: 7px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    font-size: 1.0em;
+    font-family: inherit;
+    border: 1px solid #999;
+}
+
+#loginbox div #submit {
+    font-size: 1.0em;
+    font-family: inherit;
+    border: 1px solid #bbb;
+    padding: 7px;
+    background: #eaeaea;
+}
+
+table {
+    width: 100%;
+    margin: 10px auto;
+    border-spacing: 2px;
+}
+
+table thead {
+    border-spacing: 1px;
+}
+
+table .ico {
+    width: 16px;
+}
+
+table thead td, table thead th {
+    text-align: left;
+    height: 32px;
+    background-color: #EFEFEF;
+    color: #000;
+    padding-left: 10px;
+}
+
+table tbody td {
+    background: #FFF;
+    padding: 5px;
+}
+
+table td {
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.group {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.group .content {
+    padding: 10px;
+    background: #EFEFEF;
+    border: 1px solid #D5DDE5;
+    overflow: hidden;
+    border-bottom: 3px solid #CFCFCF;
+}
+
+.group .content div {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.group .content div div {
+    padding: 0px;
+    border: none;
+    margin: none;
+}
+
+.group .content label {
+    float: left;
+    font-weight: bold;
+    font-size: 11px;
+    width: 200px;
+    margin-right: 5px;
+}
+
+.group .content label small {
+    font-weight: normal;
+}
+
+input, textarea {
+    width: 70%;
+    font-size: 12px;
+    padding: 5px;
+    background: #fff;
+    font-family: Verdana, Tahoma, sans-serif;
+    border: 1px solid #ADAAAA;
+}
+
+select {
+    font-size: 12px;
+    padding: 5px;
+    background: #fff;
+    font-family: Verdana, Tahoma, sans-serif;
+    border: 1px solid #ADAAAA;
+}
+
+#container {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #AAA;
+    background: #FAFAFA;
+    overflow: hidden;
+}
+
+a.button {
+    padding: 5px;
+    background-color: #EAEAEA;
+    cursor: pointer;
+    background-image: url(images/user.png);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    padding-left: 25px;
+}
+
+a.button:hover {
+    background-color: #E1E1E1;
+}
+
+.error {
+    border-color: #DE8CA0;
+}
+
+#leftblock {
+    float: left;
+    width: 13%;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+#rightblock {
+    float: left;
+    width: 85%;
+    overflow: hidden;
+}
+
+ul.leftmenu {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-right: 1px solid #E0E0E0;
+}
+
+ul.leftmenu li {
+    padding: 10px;
+    background: #F1F1F1 url(images/user.png);
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    border: 1px solid #E0E0E0;
+    border-right: 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+ul.leftmenu li a {
+    color: #000;
+}
+
+ul.leftmenu li.active, ul.leftmenu li:hover {
+    position: relative;
+    left: 1px;
+    background-color: #FFF;
+}
+
+ul.leftmenu img {
+    vertical-align: middle;
+    float: right;
+}
+
+ul.servers li {
+    background-image: none;
+    padding-left: 5px;
+}
+
+.detail-window {
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    width: 250px;
+    min-height: 200px;
+    background: #f1f1f1;
+    border: 1px solid #cfcfcf;
+    display: none;
+}
+
+h3 {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.gametypes .normal {
+    color: black;
+    font-weight: bold;
+}
+.gametypes .barebones {
+    color: teal;
+    font-weight: bold;
+}
+.gametypes .hardcore {
+    color: purple;
+    font-weight: bold;
+}
+
+ul.maplist {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.maplist li {
+    list-style: none;
+    width: 200px;
+    height: 139px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat:
+}
+
+ul.maplist li h4 {
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    padding: 5px;
+    margin: 0px;
+    background: #fff;
+    opacity: 0.7;
+}
+
+ul.maplist li.excluded {
+    opacity: 0.6;
+}
+
+ul.maplist li a.button {
+    opacity: 0.9;
+}
+
+ul.maplist li .force1 {
+    position: relative;
+    top: 98px;
+    left: 18px;
+    background-image: url(images/map.png);
+}
+
+ul.maplist li .force {
+    position: relative;
+    top: 98px;
+    right: 0px;
+    background-image: url(images/map.png);
+}
+
+ul.maplist li .exclude {
+    position: relative;
+    top: 60px;
+    left: 0px;
+    background-image: url(images/off.png);
+}
+
+ul.maplist li .include {
+    position: relative;
+    top: 60px;
+    left: 0px;
+    background-image: url(images/on.png);
+}

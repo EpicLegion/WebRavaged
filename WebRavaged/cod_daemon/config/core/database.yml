@@ -1,0 +1,7 @@
+type: mysql
+username: root
+password: 
+database: black
+# hostname:port | hostname | :/path/to/socket
+hostname: localhost
+prefix: blackops_

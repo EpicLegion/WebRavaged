@@ -1,0 +1,38 @@
+# This is a comment, everything after # is ignored
+# This file uses YAML format. Using spaces instead of tabulators is required
+# Using sharps in strings breaks code, YAML issue (if you really need it use \#)
+
+# ----------------
+# General Settings
+# ----------------
+general:
+    hide_democlient: Yes # Options: Yes / No
+    log_servername: Yes # Options: Yes / No
+    kick_reason_required: No # Options: Yes / No
+    send_kick_reason_to_server: Yes # If kick works like a temp ban, disable it
+
+# ---------------
+# Message list - optional (if not present, standard text input will be used)
+# ---------------
+messages:
+#    - Example message
+#    - Example message 2
+
+# ---------------
+# Kick reasons - optional (if not present, standard text input will be used)
+# ---------------
+kick_reasons:
+#    - Example reason
+#    - Example reason 2
+
+# ---------------
+# Preset map rotation settings
+# ---------------
+map_presets:
+    - name: Preset 1
+      rotation: map mp_array map mp_stadium
+      excludes: mp_cosmodrome
+
+    - name: Preset Nr. 2
+      rotation: gametype koth map mp_array
+      excludes: ~ # Remove this array item if you don't want to change excludes | If you want empty exclude list use ~ character

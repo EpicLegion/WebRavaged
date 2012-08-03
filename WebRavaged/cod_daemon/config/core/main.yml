@@ -1,0 +1,5 @@
+# Seconds per tick
+seconds_per_tick: 2
+
+# Max seconds per execution
+max_seconds: 60

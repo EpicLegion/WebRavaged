@@ -1,0 +1,127 @@
+commands:
+  aliases:
+    k: kick
+    b: ban
+    tb: tempban
+    votekick: callvote kick
+    voteban: callvote tempban
+    votemap: callvote map
+    voteplaylist: callvote playlist
+    top: rank
+  character: '!'
+  custom:
+    rules: Test custom command
+    admins: Rebecca Black, Justin Bieber, Barrack Obama
+  badwords:
+    - treyarch
+    - activision
+  disabled:
+warnings:
+  limit: 5
+  action: kick
+  final_warning: This is your final warning. Next rule violation will result in kick
+  shortcuts:
+    sc: Second chance
+    language: Using disallowed words
+    attach: Using restricted attachment
+    weapon: Using restricted weapon
+rcon:
+  prefix: '^1[WEBRCON] ^7'
+  whispers:
+    nextmap: false
+  message_limit: 140
+  default_ban_duration: 1w
+  language: en
+voting:
+  minimum: 20
+  timeout: 30
+  disabled:
+    - ban
+admin_cmd:
+  reserved: ping
+  say:
+    test: Very long message
+    test2: Very long message numer 2
+  reasons:
+    hax:
+      message: Cheating
+      duration: 1m 3w
+basic_cmd:
+  auto_rules: true
+  rule_timeout: 60
+  server_rules:
+    - Noobtube = Kick
+    - Rebecca Black is definitely your God
+tracker:
+  restricted_weapons:
+    - china_lake
+    - m72_law
+    - rpg
+  restricted_attachments:
+    - gl
+  penalty_type: warn
+  show_dead_notice: true
+  show_dominations: true
+users:
+  groups:
+    -
+      - Server Admin
+      - root
+    -
+      - Player
+      - callvote
+    -
+      - Moderator
+      - callvote;kick;immunity;say;setnextmap;warn;setplaylist;slot;reserved
+  users:
+    -
+      - 60389874
+      - Server Admin
+    -
+      - none
+      - Player
+  acl:
+    60389874:
+      deny: false
+      expires: 0
+      reason: Access denied
+  private_server: false
+maps:
+  list:
+    - mp_array
+    - mp_cracked
+    - mp_havoc
+    - mp_crisis
+    - mp_firingrange
+    - mp_duga
+    - mp_hanoi
+    - mp_cairo
+    - mp_cosmodrome
+    - mp_nuked
+    - mp_radiation
+    - mp_mountain
+    - mp_villa
+    - mp_russianbase
+  rotation_type: vote
+  enable_skip: true
+  nominations: true
+  selection_after: 50
+  playlists:
+    - tdm normal
+    - sd normal
+    - koth normal
+    - sd barebones
+    - sd hardcore
+stats:
+  welcome: 'Welcome to our server - $PLAYERNAME!'
+  welcome_back: 'Welcome back to our server - $PLAYERNAME! You have $KILLS kills on this server.'
+  headshots:
+    2: got Double Headshot
+    3: is a Head Hunter
+    4: is a Head Master
+  kills:
+    4: is Unstoppable
+    5: is Godlike
+    6: is Wicked Sick
+    7: Ludicrous Kill
+    8: HOLY SHIT
